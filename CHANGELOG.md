@@ -1,6 +1,21 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.1.2
+* Use less aggressive message on browsers diff error.
+
+## 1.1.1
+* Fixed types.
+
+## 1.1.0
+* Added Bun support (by @pornoiya and @kytta).
+
+## 1.0.16
+* Fixed old Node.js support.
+
+## 1.0.15
+* Fixed warning on missed `browserslist` in direct dependencies.
+
 ## 1.0.14
 * Another way to fix yarn and Hadoop CLI conflict (by Al Amin Ahamed).
 

@@ -1,6 +1,6 @@
 {
   "name": "update-browserslist-db",
-  "version": "1.0.14",
+  "version": "1.1.2",
   "description": "CLI tool to update caniuse-lite to refresh target browsers from Browserslist config",
   "keywords": [
     "caniuse",
@@ -36,29 +36,21 @@
     "test": "pnpm run /^test:/"
   },
   "dependencies": {
-    "escalade": "^3.1.2",
-    "picocolors": "^1.0.0"
+    "escalade": "^3.2.0",
+    "picocolors": "^1.1.1"
   },
   "peerDependencies": {
     "browserslist": ">= 4.21.0"
   },
   "bin": "cli.js",
   "devDependencies": {
-    "@logux/eslint-config": "^53.0.1",
-    "browserslist": "^4.23.0",
-    "c8": "^9.1.0",
-    "clean-publish": "^4.4.0",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-es5": "^1.5.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^17.4.0",
-    "eslint-plugin-node-imports": "^1.0.2",
-    "eslint-plugin-perfectionist": "^2.10.0",
-    "eslint-plugin-prefer-let": "^3.0.1",
-    "eslint-plugin-promise": "^6.1.1",
+    "@logux/eslint-config": "^53.5.1",
+    "browserslist": "^4.24.3",
+    "c8": "^10.1.3",
+    "clean-publish": "^5.1.0",
+    "eslint": "^9.17.0",
     "fs-extra": "^11.2.0",
-    "nanoid": "^3.3.7",
+    "nanoid": "^3.3.8",
     "uvu": "^0.5.6"
   },
   "clean-publish": {
