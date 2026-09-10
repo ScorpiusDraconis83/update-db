@@ -388,8 +388,8 @@ if (pnpmMajor >= 11) {
     match(out, `Registry latest:         ${caniuse.version}\n`)
     match(out, 'Strict pnpm minimumReleaseAge detected\n')
     match(out, `Latest policy-compliant: ${expected}\n`)
-    match(out, '$ pnpm install --lockfile-only')
-    match(out, '$ pnpm install\n')
+    match(out, '$ pnpm install --lockfile-only (with')
+    match(out, '$ pnpm install --no-frozen-lockfile\n')
     equal(await readFile(join(dir, 'package.json')), packageBefore)
     equal(await readFile(join(dir, 'pnpm-workspace.yaml')), workspaceBefore)
 

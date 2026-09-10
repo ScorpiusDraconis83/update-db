@@ -475,11 +475,15 @@ function updatePnpmStrict(print, lock, packages) {
     execFileSync('pnpm', ['install', '--lockfile-only'], { cwd: packageDir })
 
     restoreFile(workspaceFile, originalWorkspace)
-    command = 'pnpm install'
+    // The lockfile no longer matches the restored overrides, and pnpm
+    // freezes the lockfile by default in CI
+    command = 'pnpm install --no-frozen-lockfile'
     print(
       'Removing temporary pnpm overrides\n' + pico.yellow('$ ' + command) + '\n'
     )
-    execFileSync('pnpm', ['install'], { cwd: packageDir })
+    execFileSync('pnpm', ['install', '--no-frozen-lockfile'], {
+      cwd: packageDir
+    })
   } catch (error) /* c8 ignore start */ {
     restoreFile(workspaceFile, originalWorkspace)
     writeFileSync(lock.file, originalLockfile)
