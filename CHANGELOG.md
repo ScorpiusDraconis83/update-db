@@ -2,6 +2,10 @@
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.3.3
+
+- Fixed `pnpm` `minimumReleaseAge` compatibility.
+
 ## 1.3.2
 
 - Fixed `--version` output (by @keshavagr025).
